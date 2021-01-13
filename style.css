@@ -1,0 +1,643 @@
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    /* position: relative; */
+}
+header{
+    /* height: 100px; */
+    background-color:#4e2b83;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header .logo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.5s;
+}
+
+header nav ul li.active a{
+    color:#ff0e83;
+}
+/* header nav ul li a:hover */
+header nav ul li:hover a{
+    color: #ff0e83;
+}
+
+
+#carousel{
+    /* width: 100%; */
+    background-image: url(./layout/images/b3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 900px; */
+    height: 800px;
+    /* position: relative; */
+}
+#carousel{
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel__content h1{
+    font-size: 3rem;
+    font-style: bold;
+    /* margin-bottom: 1rem; */
+}
+
+.carousel__content p{
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.carousel__content button{
+    border: 1px white  solid;
+    border-radius: 0.3rem;
+    color:white;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color:#ff0e83 ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.carousel__content button:hover{
+    background-color: white;
+    color: black;
+    border: 1px #ff0e83 solid;
+    color: #000000
+}
+#intro {
+    display: grid; /* tao luoi*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;/*tao so phan cua luoi*/
+}
+#intro .img__1{
+    grid-column: 2 / span 2;/* bat dau gop cot o vi tri thu 2 vaf gop 2 cot*/
+}
+#intro img{
+    width: 100%;
+}
+#intro .intro__item{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#intro .tradition{
+    background-color: #4e2a84;
+}
+#intro .creativity{
+    background-color: #ff0e83;
+}
+#intro .things{
+    grid-column: 1/span 2;
+    background-color: pink;
+}
+#intro .quality{
+    background-color: violet;
+}
+#intro .img_4{
+    grid-column: 3/span 2;
+}
+#intro .tastycakes{
+    background-color: #4e2a84;
+}
+#intro .img__3{
+    height:100% ;
+}
+/* count */
+#count .count__content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 100px 0;
+}
+.count__item p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4e2b83;
+}
+#service > h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+#service {
+    background-image: url(./layout/images/s1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+#service .service__content{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;/* tu can chinh vao giua can doi*/
+    text-align: center;
+}
+#service .service__item i{
+    border: 1px #4e2a84 solid;
+    border-radius: 50%;
+    color:#4e2a84;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color:white ;
+}
+#service >h1{
+    margin-bottom: 30px;
+}
+#service .service__item :hover i{
+    color:#ff0e83;
+    transition: 0.5s;
+}
+#service .service__item h1{
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.service__item p{
+    font-size: 1.5rem;
+    margin-bottom: 45px;
+}
+.service__item a{
+    text-decoration: none;
+    border: 1px white  solid;
+    border-radius: 0.3rem;
+    color:white;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color:#ff0e83 ;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.service__item a:hover{
+    background-color: white;
+    color: black;
+    border: 1px #ff0e83 solid;
+    color: #000000
+}
+#gallery{
+    margin-top: 4rem;
+}
+#gallery h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+#gallery .gallery__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 20px ;
+}
+#gallery .gallery__item{
+    position: relative;
+}
+.gallery__1{
+    grid-column: 1/ span 2;
+}
+.gallery__item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.gallery__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000026;
+    color: white;
+    text-align: right;
+
+}
+.gallery__text p{
+    position:absolute;
+    bottom: 30px;
+    right:20px;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.gallery__text:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.5s;
+}
+.gallery__text h3 {
+    font-size :2rem;
+    text-transform: uppercase;
+    opacity: 1;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+.gallery__text:hover h3{
+    transform: translateY(00px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.gallery__text:hover h3::after{/* after: a~n text,..*/
+    opacity: 1;
+    transform: translateY(50px);
+}
+.gallery__text h3::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin-top: 1rem;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.gallery__text:hover h3::after{
+    opacity: 1;
+    transform: translateY(0);
+}
+.gallery__6{
+    grid-column: 3/ span 2;
+}
+#bake__team {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #4e2a84;
+}
+.bake__team__content{
+    display: flex;
+    justify-content: space-around;/* can khoang cach cac hinh*/
+    width: 80%;
+    margin: 0 auto;/* can vao giua*/
+    flex-wrap: wrap;/* day hinh xuong dong */
+}
+#bake__team >h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+.bake__team__item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.bake__item__text img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.bake__item__text{
+    position: absolute;
+    color: white;
+    width: 100%;
+    background-color: #ff0e83;
+    bottom: 0;
+    padding: 20px 0;
+    transition: all 0.5s;
+}
+.overlay{
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    opacity: 0;
+    transform: all 0.5s;
+}
+.bake__team__item:hover .overlay{
+    opacity: 1;
+    transition: all 0.5s;
+}
+.bake__team__item:hover .bake__item__text{
+    opacity: 0;
+}
+.overlay__text >h3{
+    color: #ff0e83;
+}
+.overlay__text{
+    position: absolute;
+    top:30%;
+    left:15%;
+    font-size: 20px;
+}
+.overlay__text ul{
+    list-style: none;
+}
+.overlay__text ul li{
+    display: inline;
+}
+.overlay__text ul li a {
+    color: white;
+}
+.overlay__text ul li a i{
+    height: 20px;
+    width: 20px;
+    border: 2px white solid;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.5s;
+}
+.overlay__text ul li a i:hover{
+    color: #ff0e83;
+    border: 2px solid #ff0e83;
+}
+/* #feedback{
+    position: relative;
+}
+#feedback .feedback__content .feedback__item{
+    position: absolute;
+} */
+#contact{
+    background-color:white;
+    width: 100%;
+}
+.contact__content{
+    padding: 0px 120px;
+}
+.contact__content form{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+.contact__content form input{
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 5px;
+    outline: none;
+}
+.contact__content form textarea{
+    border: 1px black solid;
+    /* border-radius: 5px; */
+    grid-column: 1/span 2;
+    resize: none;
+    outline: none;
+}
+.contact__content form input,
+.contact__content form textarea{
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: "Montserrat";
+}
+.contact__content form input:last-child{
+    border-radius: 0;
+    border: none;
+    background-color: #ff0e83;
+    width: 100%;
+    grid-column: 1/span 2;
+    transition: all 0.5s;
+}
+.contact__content form input:last-child:hover{
+    background-color: black;
+    color:white;
+}
+.contact__header h1{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    padding: 50px 0px;
+}
+  
+#TESTIMONIALS{
+    background-image: url(./layout/images/cc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+ }
+.TESTIMONIALS__header h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+}
+.TESTIMONIALS__content{
+    height: 200px;
+}
+.box{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    border: 3px #ff0e83 solid;
+    background-color: #c0c0c0b0;
+    position: relative;
+}
+.box p{
+    font-size: 1rem;
+    font-weight: 350;
+    letter-spacing: 1px;
+}
+.box h4{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 1.3rem;
+}
+.owl-carousel{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+  
+.fa-quote-left{
+    padding-right: 10px;
+      color: #007bff;
+      font-size: 20px;
+}
+.fa-quote-right{
+    padding-left:10px;
+      color: #007bff;
+      font-size: 20px;
+}
+#map{
+    margin: 30px 10px;
+}
+#info{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.info__item{
+    font-size: 2rem;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.info__item i{
+    margin-bottom: 20px;
+    color: #4e2a84;
+}
+.info__item p{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 80px;
+    line-height: 28px;
+}
+  
+.copyright span a{
+    color: #ff0e83;
+    text-decoration: none;
+    
+}
+.copyright{
+    text-align: center;
+    padding: 20px 0px;
+}
+.content__footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+}
+.footer__item{
+    padding-top: 50px;
+    margin: 0 20px;
+}
+.footer__item h2, .footer__item p{
+    letter-spacing: 2px;
+}
+.footer__item p{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 20px 0px;
+}
+.footer__item h2{
+      color: #ff0e83;
+      margin-bottom: 20px;
+}
+  
+.footer__item .social i{
+    border: 1px white solid;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0px 5px;
+    transition: all 0.5s;
+}
+  
+.footer__item .social i:hover{
+    color: #ff0e83;
+    border: 1px  #ff0e83 solid;
+}
+  
+.footer__item .content ul li{
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+    border-bottom: 1px white dotted;
+    font-weight: 200;
+}
+  
+.footer__item input{
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+.footer__item form input:last-child{
+    display: block;
+    background-color: #ff0e83;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px 20px;
+      font-weight: 600;
+      border-radius: 5px;
+      border: none;
+      width: 100px;
+      font-size: 1rem;
+      line-height: 20px;
+      transition: all 0.5s;
+}
+  
+.footer__item form input:last-child:hover{
+    background-color: white;
+    color: #000000;
+    border: #000000 1px solid;
+}
+#carousel h1{
+    animation: upDown 3s linear 2s infinite;
+}
+@keyframes upDown{
+    0%{}
+
+    50%{
+        transform: translateX(100px) scale(1);
+    }
+    75%{
+        transform: translateX(100px) scale(1);
+    }
+    100%{
+        transform: translateX(100px) scale(1);
+    }
+}
+.totop a img {
+    position: fixed;
+    right:50px;
+    bottom: 50px;
+
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out { 
+    opacity: .5;
+  }
+.totop{
+    visibility: hidden;
+}
+.cd-top--is-visible{
+    visibility: visible;
+    opacity: 1;
+}

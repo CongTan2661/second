@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+header .img-left{
+    float: left;
+}
+header .img-right{
+    float: right;
+    margin-right: 50px;
+}
+.clear-both{
+    clear: both;
+}
+header nav ol{
+    list-style: none;
+}
+header nav ol li{
+    text-transform: uppercase;
+    display: inline;
+    margin: 10px;
+   
+}
+header nav ol li a{
+    text-decoration: none;
+    color: #686868;
+}
+#intro .tieude{
+    text-transform: uppercase;
+    text-align: center;
+}
+#intro .gioithieu p{
+    text-align: center;
+    margin-bottom: 100px;
+}
+#intro {
+    width: 100%;
+}
+#intro .line{
+    width: 45%;
+    margin: auto;
+}
+#intro .chuongtrinh .list .list__img h1{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #a3393e;
+    margin-bottom: 5px;
+}
+#intro .chuongtrinh .list .list__img p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+#intro .chuongtrinh .list{
+    display: flex;
+    width: 83%;
+    margin: 0 auto;
+}
+#intro .chuongtrinh .list .list__img{
+    margin: 0 10px;
+}
+ .anhsukien{
+    width: 100%;
+}
+.anhsukien .pic-left,.pic-right{
+    width: 50%;
+    float: left;
+}
+.pic-item img{
+    float: left;
+    padding:  0 12px 12px 12px;
+    width: 50%;
+}
+.pic-right .pic > img{
+    width: 50%;
+    height: 244px;
+
+}
+.pic-left>img{
+    height: 458px;
+    width: 100%;
+    
+}
+.border1 {
+    background-color: darkred;
+    width: 730px;
+    height: 5px;
+}
+
+
+.pic-left{
+    position: relative;
+}
+.pic-left .text {
+    text-transform: uppercase;
+    background-color:rgba(0, 0, 0, 0.685);
+    color: white;
+    font-size: 11px;
+    padding-top: 5px;
+    position: absolute;
+    top: 84%;
+}
+.pic-right{
+    position: relative;
+}
+.border h1{
+    border-bottom: 8px solid darkred;
+}
+.pic-right .pic1 .textt h1{
+    width: 339px;
+    height: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color:rgba(0, 0, 0, 0.685);
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 35%;
+    left: 14px;
+ }
+.pic-right .pic2 .textt h1{
+    width: 340px;
+    height: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color:rgba(0, 0, 0, 0.685);
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 35%;
+    left:51.5%
+}
+.pic-right .pic3 .textt h1{
+    width: 339px;
+    height: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color:rgba(0, 0, 0, 0.685);
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 85%;
+    left: 2%;
+}
+.pic-right .pic4 .textt h1{
+    width: 339px;
+    height: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color:rgba(0, 0, 0, 0.685);
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 85%;
+    left:52%;
+}
+hr .pic1 img{
+    border-color: darkred;
+}
+.pic1 .border2 {
+    background-color: darkred;
+    width: 341px;
+    height: 3px;
+    position: absolute;
+    top:227px;
+    left:12px;
+}
+.pic2 .border2{
+    background-color: darkred;
+    width: 341px;
+    height: 3px;
+    position: absolute;
+    top:227px;
+    right:13px;
+}
+.pic3 .border2{
+    background-color: darkred;
+    width: 341px;
+    height: 3px;
+    position: absolute;
+    top:464px;
+    right:9px;
+}
+.pic4 .border2{
+    background-color: darkred;
+    width: 341px;
+    height: 3px;
+    position: absolute;
+    top:464px;
+    left:12px;
+}
